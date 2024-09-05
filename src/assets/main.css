@@ -1,8 +1,7 @@
-@import './base.css';
-
-#app {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'General Sans', sans-serif;
+  background-color: #F9FAFB;
 }
-
