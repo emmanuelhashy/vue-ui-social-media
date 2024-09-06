@@ -86,18 +86,12 @@ onMounted(() => {
 footer > div > img{
     display:none !important;
   }
-.bc-link {
-    border-color: #FB8E0B !important;
-}
 
-.bg-link {
-    background-color: red !important;
-}
 
 .upload-button {
     padding: 10px 10px;
-    background-color: #FB8E0B;
-    border: #FB8E0B;
+    background-color: #531253;
+    border: #531253;
     color: white;
     height: 100%;
     font-size: 14px;

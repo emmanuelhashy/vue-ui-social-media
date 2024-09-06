@@ -18,7 +18,7 @@ export default {
 
 <template>
   <main class="px-[28px] flex justify-center space-x-3 items-center h-screen bg-white sm:px-[48px]">
-    <div class="text-left border space-y-3 py-4 px-8 w-96 rounded-md border-[#EEEFF2]">
+    <div class="text-left border space-y-3 py-4 px-8 w-[30rem] rounded-md border-[#EEEFF2]">
       <p class="font-bold text-base">File Upload Component</p>
       <div class="space-y-2">
           <p class="label">Banner Image</p>
