@@ -20,32 +20,35 @@ export default {
 </script>
 
 <template>
-  <main class="px-[28px] flex justify-center space-x-3 items-center h-screen bg-white sm:px-[48px]">
-    <div class="text-left border space-y-3 py-4 px-8 rounded-md border-[#EEEFF2]">
-      <p class="font-bold text-base">Variant: {{ variantA  }}</p>
-      <div v-for="item in items" :key="item.id" class="flex space-x-2 items-center">
-          <CustomCheckbox :item="item" :resetSelect="resetSelect"
-            :handleSelectReset="handleSelectReset"
-            color="bg-green-600" :variant="variantA"/>
-        <div>
-          <p class="text-[#111827] font-semibold">
-            {{ item.name }}
-          </p>
-          <p class="text-[#88888A] font-medium">{{ item.email }}</p>
+  <main class="flex flex-col items-center space-y-4 justify-center h-screen bg-white sm:px-[48px] px-[28px]">
+    <p class="text-2xl font-bold">Checkbox Example</p>
+    <div class=" flex justify-center space-x-3 items-center ">
+      <div class="text-left border space-y-3 py-4 px-8 rounded-md border-[#EEEFF2]">
+        <p class="font-bold text-base">Variant: {{ variantA  }}</p>
+        <div v-for="item in items" :key="item.id" class="flex space-x-2 items-center">
+            <CustomCheckbox :item="item" :resetSelect="resetSelect"
+              :handleSelectReset="handleSelectReset"
+              color="bg-[#4B104B]" :variant="variantA"/>
+          <div>
+            <p class="text-[#111827] font-semibold">
+              {{ item.name }}
+            </p>
+            <p class="text-[#88888A] font-medium">{{ item.email }}</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="text-left border space-y-3 py-4 px-8 rounded-md border-[#EEEFF2]">
-      <p class="font-bold text-base">Variant: {{ variantB  }}</p>
-      <div v-for="item in items" :key="item.id" class="flex space-x-2 items-center">
-          <CustomCheckbox :item="item" :resetSelect="resetSelect"
-            :handleSelectReset="handleSelectReset"
-            color="bg-green-600" :variant="variantB"/>
-        <div>
-          <p class="text-[#111827] font-semibold">
-            {{ item.name }}
-          </p>
-          <p class="text-[#88888A] font-medium">{{ item.email }}</p>
+      <div class="text-left border space-y-3 py-4 px-8 rounded-md border-[#EEEFF2]">
+        <p class="font-bold text-base">Variant: {{ variantB  }}</p>
+        <div v-for="item in items" :key="item.id" class="flex space-x-2 items-center">
+            <CustomCheckbox :item="item" :resetSelect="resetSelect"
+              :handleSelectReset="handleSelectReset"
+              color="bg-[#4B104B]" :variant="variantB"/>
+          <div>
+            <p class="text-[#111827] font-semibold">
+              {{ item.name }}
+            </p>
+            <p class="text-[#88888A] font-medium">{{ item.email }}</p>
+          </div>
         </div>
       </div>
     </div>
