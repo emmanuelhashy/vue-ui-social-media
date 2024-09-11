@@ -17,9 +17,11 @@
   }
 </script>
 <script setup>
+import { ref, onMounted } from 'vue';
 const cloudName = import.meta.env.VITE_CLOUD_NAME;
 const uploadPreset = import.meta.env.VITE_UPLOAD_PRESET;
-import { ref, onMounted } from 'vue';
+const imgUrl = ref("")
+const errorMessage = ref("")
 
 const props = defineProps({
     callbackFunc: {
@@ -27,10 +29,6 @@ const props = defineProps({
         required: true
     }
 });
-
-const imgUrl = ref("")
-const errorMessage = ref("")
-
 
 const myWidget = window.cloudinary.createUploadWidget(
     {
@@ -86,7 +84,6 @@ onMounted(() => {
 footer > div > img{
     display:none !important;
   }
-
 
 .upload-button {
     padding: 10px 10px;
